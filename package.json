@@ -1,0 +1,30 @@
+{
+  "name": "note-keeper",
+  "version": "1.0.0",
+  "description": "Task for TPConnects",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammedyusuf678/note-keeper.git"
+  },
+  "author": "Muhammed Yusuf Dada",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.28"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
